@@ -102,7 +102,6 @@ public class repos {
 			String owner = rs.getString("login");
 			int id = rs.getInt("id");
 			URL url = new URL("https://api.github.com/users/"+owner+"/repos");
- //?access_token=5e5101a2a46d3a0a12eeb5bddf01090a537af972			
 			conn = (HttpURLConnection) url.openConnection();
 			conn.connect();
 			BufferedReader readit = new BufferedReader(new InputStreamReader(conn.getInputStream()));
